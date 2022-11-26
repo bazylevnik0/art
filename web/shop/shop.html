@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            shop
+        </title>
+        <style>
+            body {
+                text-align: center;
+            }
+            #canvas {
+                background: #ffffff;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="450"></canvas>
+    </body>
+    <script>
+        const canvas = document.getElementById("canvas")
+        const ctx    = canvas.getContext("2d")
+
+        var r = 0
+        function update() {
+            ctx.clearRect(0,0,canvas.width,canvas.height)
+
+            ctx.fillStyle = "yellow"
+            ctx.fillRect(100     , 100  , 400 , 25) //1 line
+            ctx.fillRect(150+100 , 200  , 400 , 25) //2 line           
+            ctx.fillRect(250+100 , 350  , 400 , 25) //3 line
+
+            ctx.fillStyle = "green"
+            ctx.fillRect(150     , 100  , 100 , 100) //a
+            ctx.fillRect(350     , 100  , 100 , 100) //b
+            ctx.fillRect(500     , 150  , 50  , 50)  //c
+            ctx.fillRect(600     , 200  , 150 , 150) //d
+            
+            let choice = Math.floor(Math.random() * 2)
+             if(choice == 1) {
+                ctx.fillStyle = "green"
+                ctx.fillRect(600 , 50  , 150 , 100)
+                for (let i = 0; i < 3; i++) {
+                    ctx.fillRect(100+i*50 , 400  , 25 , 50)    
+                }
+             } 
+            requestAnimationFrame(update)
+        }
+        update()
+    </script>
+</html>

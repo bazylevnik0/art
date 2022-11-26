@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            manufactory
+        </title>
+        <style>
+            body {
+                text-align: center;
+            }
+            #canvas {
+                background: #ffffff;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="450"></canvas>
+    </body>
+    <script>
+        const canvas = document.getElementById("canvas")
+        const ctx    = canvas.getContext("2d")
+
+        var line_1 = [1,2,3]
+        var line_2 = [2,3,2]
+        var line_3 = [3,2,2]
+        
+        function update() {
+            ctx.clearRect(0,0,canvas.width,canvas.height)
+
+            drawLines()
+            drawOperator()
+
+            requestAnimationFrame(update)
+        }
+        update();
+
+
+        var r = 0
+        var i = 0
+        function drawLines() {
+            for ( i = 0; i <= 2; i++ ) {
+                ctx.fillStyle = "gray"
+                r = Math.floor(Math.random() * 2)
+                ctx.fillRect( 100*i*1+50 , 90+10   , 100 , 25*line_1[i]*r )
+                r = Math.floor(Math.random() * 2)
+                ctx.fillRect( 100*i*2+50 , 90+125  , 100 , 25*line_2[i]*r )
+                r = Math.floor(Math.random() * 2)
+                ctx.fillRect( 100*i*3+50 , 90+230  , 100 , 25*line_3[i]*r )              
+            }
+        }
+                
+        function drawOperator() {
+            ctx.fillStyle = "red"
+            ctx.fillRect( 600 , 50  , 100 , 200 )   
+        }
+    </script>    
+</html>
+

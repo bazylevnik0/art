@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            prison
+        </title>
+        <style>
+            body {
+                text-align: center;
+            }
+            #canvas {
+                background: #ffffff;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="450"></canvas>
+    </body>
+    <script>
+        const canvas = document.getElementById("canvas")
+        const ctx    = canvas.getContext("2d")
+
+        function update() {
+            ctx.clearRect(0,0,canvas.width,canvas.height)
+
+            drawPlace()
+            drawPeople()
+            drawGuard()
+
+            requestAnimationFrame(update)
+        }
+
+        function drawPlace() {
+            ctx.fillStyle = "gray"
+            ctx.fillRect(300 , 100  , 300 , 300)
+        }
+
+        function drawPeople() {
+            //out
+            for ( let i=0; i<10; i++ ){
+                for (let j=0; j<10; j++){
+                    let choice = Math.floor(Math.random() * 2)
+                    if(choice) {
+                        ctx.fillStyle = "green"
+                        ctx.fillRect(100+i*20 , 100+j*20  , 10 , 10)
+                    }
+                }
+            }    
+            //in
+            for ( let i=0; i<10; i++ ){
+                for (let j=0; j<2; j++){
+                    let choice = Math.floor(Math.random() * 2)
+                    if(choice) {
+                        ctx.fillStyle = "red"
+                        ctx.fillRect(300+i*20 , 100+100+j*20  , 15 , 15)
+                    }
+                }
+            }            
+        }
+
+        function drawGuard() {
+            ctx.fillStyle = "blue"
+            ctx.fillRect(500 , 100  , 50 , 100)            
+        }
+
+        update()
+    </script>
+</html>

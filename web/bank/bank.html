@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>
+            bank
+        </title>
+        <style>
+            body {
+                text-align: center;
+            }
+            #canvas {
+                background: #ffffff;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="450"></canvas>
+    </body>
+    <script>
+        const canvas = document.getElementById("canvas")
+        const ctx    = canvas.getContext("2d")
+
+        var t = 0
+        function update() {
+            ctx.clearRect(0,0,canvas.width,canvas.height)
+
+            drawMoney()
+            drawHumans()
+            if (t >  0   && t < 50) {
+                drawTransaction("A")
+            }
+            if (t >= 50  && t < 150) {
+                drawTransaction("B")
+            }
+            if (t >= 150 && t < 250) {
+                drawTransaction("A")
+            }
+            if (t >= 250) {
+                drawTransaction("B")
+            }
+            
+            if (t > 299){
+            t = 0
+            } else t++ 
+
+            requestAnimationFrame(update)
+        }
+
+        var c
+        function drawTransaction( c ) {
+            ctx.fillStyle = "green"
+            if (c == "A") {
+                ctx.fillRect(200 , 300  , 50 , 50)
+            }
+            if (c == "B") {
+                ctx.fillRect(275 , 300  , 50 , 50)
+            }
+        }
+        function drawMoney() {
+            ctx.fillStyle = "green"
+            ctx.fillRect(550 , 300-t  , 200 , 60+t)
+        }
+
+        function drawHumans () {
+            ctx.fillStyle = "red"
+            ctx.fillRect(350 , 225  , 150 , 175)
+            ctx.fillRect(100 ,300  , 75 , 100)
+        }
+
+        update()
+    </script>
+</html>

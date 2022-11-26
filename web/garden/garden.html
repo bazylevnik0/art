@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>
+            garden
+        </title>
+        <style>
+            body {
+                text-align: center;
+            }
+            #canvas {
+                background: #ffffff;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="450"></canvas>
+    </body>
+    <script>
+        const canvas = document.getElementById("canvas")
+        const ctx    = canvas.getContext("2d")
+
+        //data
+        var flowers = [0,0,0,0,0,0,0,0]
+        var cutter  = 0
+        var worker  = 0
+
+        var time = 0;
+        function update() {
+            ctx.clearRect(0,0,canvas.width,canvas.height)
+
+            //engine
+            //grow flowers
+            let choice = Math.floor(Math.random() * 8)
+            flowers[choice]++
+
+            //cut flowers & show cut & show get
+            if ( time > 99 ) {
+                cutFlowers()
+                showCutting()
+            }
+            showGetting()
+            time++
+            //------
+
+            //draw flowers
+            drawFlowers()
+
+            requestAnimationFrame(update)
+        }
+        update();
+
+        function drawFlowers() {
+            for (let i = 0; i < 8; i++) {
+                let temp = flowers[i]
+                for (let j = 0; j <= temp; j++) {
+                    if ( j >= 8 ) {
+                        ctx.fillStyle = "yellow"
+                    } else  ctx.fillStyle = "green"
+                    ctx.fillRect(((i*40)+20),(450-(j*40)-40),20,20)
+                }
+            }
+        }
+
+        function cutFlowers() {
+            for (let i = 0; i < 8; i++) {
+                if ( flowers[i] >= 9 ) {
+                    flowers[i] = 0
+                }
+            }
+        }
+        
+        var varCutting = 0
+        function showCutting() {
+            varCutting++
+            if( varCutting > 9) {
+                time = 0
+                varCutting = 0
+            } else {
+                ctx.fillStyle = "black"
+                ctx.fillRect(20,110,760,20)
+                time = 100
+            }
+        }
+
+        var varGetting = 0
+        function showGetting() {
+            if ( varGetting > 109) {
+                varGetting = 0
+            } else {
+                ctx.fillStyle = "red"
+                ctx.fillRect((350+(varGetting*2)),250,210,180)
+
+                ctx.fillStyle = "green"
+                ctx.fillRect((350+(varGetting*2)),210,20,20)
+                ctx.fillStyle = "green"
+                ctx.fillRect((350+(varGetting*2)+40),210,20,20)
+                ctx.fillStyle = "yellow"
+                ctx.fillRect((350+(varGetting*2)+20),170,20,20)
+
+                varGetting++
+            }
+        }
+    </script>    
+</html>
+

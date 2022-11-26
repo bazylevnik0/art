@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            butchery
+        </title>
+        <style>
+            body {
+                text-align: center;
+            }
+            #canvas {
+                background: #ffffff;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="450"></canvas>
+    </body>
+    <script>
+        const canvas = document.getElementById("canvas")
+        const ctx    = canvas.getContext("2d")
+
+        var t = 0;
+        var p = 0;
+        function update() {
+            ctx.clearRect(0,0,canvas.width,canvas.height)
+
+            ctx.fillStyle = "red"
+            //1
+            ctx.fillRect(100+t     , 50  , 60 , 60)
+            //2
+            ctx.fillRect(100+t     , 150 , 60 , 60)
+            //3
+            ctx.fillRect(100+t+200 , 50  , 60 , 60)
+            //4
+            ctx.fillRect(100+t+200 , 150 , 60 , 60)
+            //5&6
+            if (p == 1) {
+                ctx.fillStyle = "black"
+                ctx.fillRect(600 , 50 , 60 , 60)
+                ctx.fillRect(600 , 150 , 60 , 60)
+            }
+            //7
+            if (p == 0) {
+                ctx.fillStyle = "red"
+                ctx.fillRect(600 , 250 , 60 , 360)
+            }
+            
+            if (t >= 99) {
+                if (  p == 0 ) {
+                       p = 1
+                } else p = 0
+                t = 0
+            } else t++
+            
+            requestAnimationFrame(update)
+        }
+        update()
+    </script>
+</html>
