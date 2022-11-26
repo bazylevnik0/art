@@ -1,0 +1,121 @@
+<html>
+<head>
+  <title>threejs - basic</title>
+  <style>
+    body
+    {
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas
+    {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+  <script src="three.js"></script>
+  <script>
+    var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'),antialias: true});
+    renderer.setClearColor(0x000000);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    var camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHeight, 0.1, 3000);
+
+    var scene = new THREE.Scene();
+
+    //light
+    var light = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(light);
+    var light1 = new THREE.PointLight(0xffffff, 0.5);
+    scene.add(light1);
+
+    //plane
+    const width = 9;  
+    const height = 9;  
+    const geometryPlane = new THREE.PlaneBufferGeometry(width, height);
+    var materialPlane = new THREE.MeshLambertMaterial({color: 0xc38bf4});
+    var meshPlane = new THREE.Mesh(geometryPlane, materialPlane);
+    meshPlane.position.set(0, 0, -15);
+    scene.add(meshPlane);
+
+    //a
+    const shapeA = new THREE.Shape();
+    const xA = 1.3;
+    const yA = 4.8;
+    shapeA.moveTo(xA + 3.3, yA - 1.7);
+    shapeA.bezierCurveTo(xA + 3.1, yA - 3.8, xA - 1.9, yA + 4.5, xA + 4.8, yA - 8.2);
+    shapeA.bezierCurveTo(xA + 1.9, yA - 1.8, xA - 6.7, yA - 8.4, xA + 3.4, yA - 9.3);
+    shapeA.bezierCurveTo(xA - 4.9, yA - 0.8, xA + 6.0, yA - 9.2, xA - 5.4, yA + 0.2);
+    shapeA.bezierCurveTo(xA + 6.3, yA - 8.6, xA + 2.6, yA - 5.6, xA + 1.2, yA - 8.0);
+    shapeA.bezierCurveTo(xA + 7.1, yA - 9.8, xA + 0.6, yA + 2.6, xA + 4.8, yA - 1.9);
+    shapeA.bezierCurveTo(xA - 9.8, yA + 2.1, xA - 7.4, yA + 3.6, xA + 2.4, yA - 2.8);
+
+    const extrudeSettingsA = {
+      steps: 2,  
+      depth: 1,  
+      bevelEnabled: true,  
+      bevelThickness: 1,  
+      bevelSize: 1,  
+      bevelSegments: 2,  
+    };
+
+    const geometryA = new THREE.ExtrudeBufferGeometry(shapeA, extrudeSettingsA);
+    var materialA = new THREE.MeshLambertMaterial({color: 0x1f3847});
+    var meshA = new THREE.Mesh(geometryA, materialA);
+    meshA.position.set(0, 0, -18);
+    scene.add(meshA);
+    
+     //b
+    const shapeB = new THREE.Shape();
+    const xB = -1.3;
+    const yB = -4.8;
+    shapeB.moveTo(xB - 3.3, yB + 1.7);
+    shapeB.bezierCurveTo(xB - 3.1, yB + 3.8, xB + 1.9, yB - 4.5, xB - 4.8, yB + 8.2);
+    shapeB.bezierCurveTo(xB - 1.9, yB + 1.8, xB + 6.7, yB + 8.4, xB - 3.4, yB + 9.3);
+    shapeB.bezierCurveTo(xB + 4.9, yB + 0.8, xB - 6.0, yB + 9.2, xB + 5.4, yB - 0.2);
+    shapeB.bezierCurveTo(xB - 6.3, yB + 8.6, xB - 2.6, yB + 5.6, xB - 1.2, yB + 8.0);
+    shapeB.bezierCurveTo(xB - 7.1, yB + 9.8, xB - 0.6, yB - 2.6, xB - 4.8, yB + 1.9);
+    shapeB.bezierCurveTo(xB + 9.8, yB - 2.1, xB + 7.4, yB - 3.6, xB - 2.4, yB + 2.8);
+
+    const extrudeSettingsB = {
+      steps: 2,  
+      depth: 1,  
+      bevelEnabled: true,  
+      bevelThickness: 1,  
+      bevelSize: 1,  
+      bevelSegments: 2,  
+    };
+
+    const geometryB = new THREE.ExtrudeBufferGeometry(shapeB, extrudeSettingsB);
+    var materialB = new THREE.MeshLambertMaterial({color: 0x869c0b});
+    var meshB = new THREE.Mesh(geometryB, materialB);
+    meshB.position.set(0, 0, -18);
+    scene.add(meshB);
+
+    //animation
+    requestAnimationFrame(render);
+
+    function render()
+    {
+      
+      //meshA.rotation.z += -0.001;
+      meshA.rotation.x += -0.001;
+      meshA.rotation.y += -0.001;
+      //meshB.rotation.z += 0.001;
+      meshB.rotation.x += 0.001;
+      meshB.rotation.y += 0.001;
+           
+      renderer.render(scene, camera);
+      requestAnimationFrame(render); 
+    }
+
+    renderer.render(scene, camera);
+  </script>
+</body>
+</html>
+
+
+

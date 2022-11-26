@@ -1,0 +1,91 @@
+<html>
+<head>
+  <title>threejs - basic</title>
+  <style>
+    body
+    {
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas
+    {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+  <script src="three.js"></script>
+  <script>
+    var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'),antialias: true});
+    renderer.setClearColor(0x000000);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    var camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHeight, 0.1, 3000);
+
+    var scene = new THREE.Scene();
+
+    //light
+    var light = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(light);
+    var light1 = new THREE.PointLight(0xffffff, 0.5);
+    scene.add(light1);
+
+    //plane
+    const width = 9;  
+    const height = 9;  
+    const geometryPlane = new THREE.PlaneBufferGeometry(width, height);
+    var materialPlane = new THREE.MeshLambertMaterial({color: 0xaa11ff});
+    var meshPlane = new THREE.Mesh(geometryPlane, materialPlane);
+    meshPlane.position.set(0, 0, -15);
+    scene.add(meshPlane);
+    
+    //a
+      const radiusA = 5;  
+      const widthSegmentsA = 12;  
+      const heightSegmentsA = 8;  
+    const geometryA = new THREE.SphereBufferGeometry(radiusA, widthSegmentsA, heightSegmentsA);
+    var materialA = new THREE.MeshLambertMaterial({color: 0x1111ff});
+    var meshA = new THREE.Mesh(geometryA, materialA);
+    meshA.position.set(0, 0, -18);
+    scene.add(meshA);
+
+    //b
+    const pointsB = [];
+    for (let i = 0; i < 10; ++i) {
+      pointsB.push(new THREE.Vector2(Math.sin(i * 0.2) * 3 + 3, (i - 5) * .8));
+    }
+    const segmentsB =  6;  
+    const phiStartB = Math.PI * 1.94;  
+    const phiLengthB = Math.PI * 1.66;  
+    const geometryB = new THREE.LatheBufferGeometry(
+      pointsB, segmentsB, phiStartB, phiLengthB);
+    var materialB = new THREE.MeshLambertMaterial({color: 0x9999aa});
+    var meshB = new THREE.Mesh(geometryB, materialB);
+    meshB.position.set(0, 0, -18);
+    scene.add(meshB);
+
+  
+    
+    //animation
+    requestAnimationFrame(render);
+
+    function render()
+    {
+      
+      meshA.rotation.x += -0.001;
+      meshB.rotation.y += -0.001;
+      meshA.rotation.y += -0.001;
+      
+      renderer.render(scene, camera);
+      requestAnimationFrame(render); 
+    }
+
+    renderer.render(scene, camera);
+  </script>
+</body>
+</html>
+
+
+

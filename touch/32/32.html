@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>threejs - basic</title>
+  <style>
+    body
+    {
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas
+    {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+  <script src="three.js"></script>
+  <script>
+    var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'),antialias: true});
+    renderer.setClearColor(0x000000);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    var camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHeight, 0.1, 3000);
+
+    var scene = new THREE.Scene();
+
+    //light
+    var light = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(light);
+    var light1 = new THREE.PointLight(0xffffff, 0.5);
+    scene.add(light1);
+
+    //plane
+    const width = 12;
+    const height = 12;
+    const geometryPlane = new THREE.PlaneBufferGeometry(width, height);
+    var materialPlane = new THREE.MeshLambertMaterial({color: 0xac7b62});
+    var meshPlane = new THREE.Mesh(geometryPlane, materialPlane);
+    meshPlane.position.set(0, 0, -20);
+    scene.add(meshPlane);
+
+    //a
+    const widthA = 8;
+    const heightA = 8;
+    const depthA = 8;
+    const geometryA = new THREE.BoxBufferGeometry(widthA, heightA, depthA);
+    var materialA = new THREE.MeshLambertMaterial({color: 0x876e89});
+    var meshA = new THREE.Mesh(geometryA, materialA);
+    meshA.position.set(-5, 0, -22.5);
+    scene.add(meshA);
+
+    //b
+    const widthB = 8;
+    const heightB = 8;
+    const depthB = 8;
+    const geometryB = new THREE.BoxBufferGeometry(widthB, heightB, depthB);
+    var materialB = new THREE.MeshLambertMaterial({color: 0xc08e9f});
+    var meshB = new THREE.Mesh(geometryB, materialB);
+    meshB.position.set(5, 0, -22.5);
+    scene.add(meshB);
+
+    //c
+    const radiusC = 7;
+    const geometryC = new THREE.OctahedronBufferGeometry(radiusC);
+    var materialC = new THREE.MeshLambertMaterial({color: 0xe4a8c7});
+    var meshC = new THREE.Mesh(geometryC, materialC);
+    meshC.position.set(0, 0, -22.5);
+    scene.add(meshC);
+
+    //animation
+    requestAnimationFrame(render);
+
+    function render()
+    {
+
+       //meshA.rotation.z += 0.001;
+       //meshA.rotation.x += 0.001;
+       meshA.rotation.y += 0.001;
+       meshB.rotation.y += -0.001;
+
+
+
+      renderer.render(scene, camera);
+      requestAnimationFrame(render);
+    }
+
+    renderer.render(scene, camera);
+  </script>
+</body>
+</html>

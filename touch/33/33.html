@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>threejs - basic</title>
+  <style>
+    body
+    {
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas
+    {
+      background: red;
+      transform: rotate(-90deg);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+  <script src="three.js"></script>
+  <script>
+  
+    var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'),antialias: true});
+    renderer.setClearColor(0x000000);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    var camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHeight, 0.1, 3000);
+
+    var scene = new THREE.Scene();
+
+    //light
+    var light = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(light);
+    var light1 = new THREE.PointLight(0xffffff, 0.5);
+    scene.add(light1);
+
+    //plane
+    const width = 12;
+    const height = 12;
+    const geometryPlane = new THREE.PlaneBufferGeometry(width, height);
+    var materialPlane = new THREE.MeshLambertMaterial({color: 0x859893});
+    var meshPlane = new THREE.Mesh(geometryPlane, materialPlane);
+    meshPlane.position.set(0, 0, -20);
+    scene.add(meshPlane);
+
+    //a
+   function klein(v, u, target) {
+  	u *= Math.PI;
+  	v *= 2 * Math.PI;
+  	u = u * 2;
+
+  	let x;
+  	let z;
+
+  	if (u < Math.PI) {
+      	//x = 3 * Math.cos(u) * (1 + Math.sin(u)) + (2 * (1 - Math.cos(u) / 2)) * Math.cos(u) * Math.cos(v);
+      	x = 1* Math.cos(u);
+      	//z = -8 * Math.sin(u) - 2 * (1 - Math.cos(u) / 2) * Math.sin(u) * Math.cos(v);
+      	z = 2* Math.cos(u);
+  	} else {
+        //x = 3 * Math.cos(u) * (1 + Math.sin(u)) + (2 * (1 - Math.cos(u) / 2)) * Math.cos(v + Math.PI);
+        x = 3* Math.cos(u);
+        //z = -8 * Math.sin(u);
+        z = 4* Math.cos(u);
+  	}
+
+ 	 const y = -4 * (1 - Math.cos(u) / 2) * Math.sin(v);
+
+  	target.set(x, y, z).multiplyScalar(0.75);
+	}
+
+const slices =  4;  
+
+const stacks = 25;  
+
+const geometryA = new THREE.ParametricGeometry(
+    klein, slices, stacks);
+    var materialA = new THREE.MeshLambertMaterial({color: 0x9b6c6a});
+    var meshA = new THREE.Mesh(geometryA, materialA);
+    meshA.position.set(0, 0, -15);
+  	
+
+    scene.add(meshA);
+
+    //animation
+    requestAnimationFrame(render);
+
+    function render()
+    {
+
+      //meshA.rotation.z += 0.001;
+      meshA.rotation.y += 0.001;
+
+
+      renderer.render(scene, camera);
+      requestAnimationFrame(render);
+    }
+
+    renderer.render(scene, camera);
+  </script>
+</body>
+</html>

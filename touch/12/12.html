@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>threejs - basic</title>
+  <style>
+    body
+    {
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas
+    {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+  <script src="three.js"></script>
+  <script>
+    var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'),antialias: true});
+    renderer.setClearColor(0x000000);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    var camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHeight, 0.1, 3000);
+
+    var scene = new THREE.Scene();
+
+    //light
+    var light = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(light);
+    var light1 = new THREE.PointLight(0xffffff, 0.5);
+    scene.add(light1);
+
+    //plane
+    const width = 9;  
+    const height = 9;  
+    const geometryPlane = new THREE.PlaneBufferGeometry(width, height);
+    var materialPlane = new THREE.MeshLambertMaterial({color: 0xffff11});
+    var meshPlane = new THREE.Mesh(geometryPlane, materialPlane);
+    meshPlane.position.set(0, 0, -15);
+    scene.add(meshPlane);
+    
+    //mesh1
+    const radius1 = 5;  
+
+    var geometry1 = new THREE.IcosahedronBufferGeometry(radius1);
+    var material1 = new THREE.MeshLambertMaterial({color: 0x99ffaa});
+    var mesh1 = new THREE.Mesh(geometry1, material1);
+    mesh1.position.set(0, 0, -18);
+
+    scene.add(mesh1);
+
+    //
+    const radius2 = 6;  
+    const height2 = 8;  
+    const radialSegments2 = 16;  
+    const geometry2 = new THREE.ConeBufferGeometry(radius2, height2, radialSegments2);
+
+    var material2 = new THREE.MeshLambertMaterial({color: 0xff6611});
+    var mesh2 = new THREE.Mesh(geometry2, material2);
+    mesh2.position.set(0, 0, -18);
+
+    scene.add(mesh2);
+
+
+    //animation
+    requestAnimationFrame(render);
+
+    function render()
+    {
+      
+      mesh1.rotation.x += -0.001;
+      mesh1.rotation.y += -0.001;
+      renderer.render(scene, camera);
+      requestAnimationFrame(render); 
+    }
+
+    renderer.render(scene, camera);
+  </script>
+</body>
+</html>
+
+
+

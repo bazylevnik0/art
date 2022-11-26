@@ -1,0 +1,115 @@
+<html>
+<head>
+  <title>threejs - basic</title>
+  <style>
+    body
+    {
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas
+    {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+  <script src="three.js"></script>
+  <script>
+    function main() {
+  //get canvas
+  var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanvas'),antialias: true});
+    renderer.setClearColor(0x000000);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  //set camera
+  const fov = 75;
+  const aspect = 2;  // the canvas default
+  const near = 0.1;
+  const far = 5;
+  const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+  camera.position.z = 2;
+
+  const scene = new THREE.Scene();
+  //create light
+  {
+    const color = 0xFFFFFF;
+    const intensity = 1;
+    const light = new THREE.DirectionalLight(color, intensity);
+    light.position.set(-1, 2, 4);
+    scene.add(light);
+  }
+ 
+  //create cube
+  const boxWidth = 2.5;
+  const boxHeight = 2.5;
+  const boxDepth = 2.5;
+  const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
+
+  const material = new THREE.MeshPhongMaterial({color: 0xffffff});  // greenish blue
+
+  const cube = new THREE.Mesh(geometry, material);
+  scene.add(cube);
+  //create cube1
+  const boxWidth1 = 2.5;
+  const boxHeight1 = 2.5;
+  const boxDepth1 = 1.5;
+  const geometry1 = new THREE.BoxGeometry(boxWidth1, boxHeight1, boxDepth1);
+
+  const material1 = new THREE.MeshPhongMaterial({color: 0x11aaaa});  // greenish blue
+
+  const cube1 = new THREE.Mesh(geometry1, material1);
+  scene.add(cube1);
+  // more
+  const boxWidth2 = 2.5;
+  const boxHeight2 = 2.5;
+  const boxDepth2 = 1.5;
+  const geometry2 = new THREE.BoxGeometry(boxWidth2, boxHeight2, boxDepth2);
+
+  const material2 = new THREE.MeshPhongMaterial({color: 0xFFCC11});  // greenish blue
+
+  const cube2 = new THREE.Mesh(geometry2, material2);
+  scene.add(cube2);
+
+  //resolution
+  function resizeRendererToDisplaySize(renderer) {
+    const canvas = renderer.domElement;
+    const width = canvas.clientWidth;
+    const height = canvas.clientHeight;
+    const needResize = canvas.width !== width || canvas.height !== height;
+    if (needResize) {
+      renderer.setSize(width, height, false);
+    }
+    return needResize;
+  }
+  //animation
+  function render(time) {
+    time *= 0.0001;  // convert time to seconds
+   if (resizeRendererToDisplaySize(renderer)) {
+      const canvas = renderer.domElement;
+      camera.aspect = canvas.clientWidth / canvas.clientHeight;
+      camera.updateProjectionMatrix();
+    }
+    cube1.position.z = -0.5;
+    cube2.position.z = -0.7;
+    cube.position.z = -1.2;
+    cube.rotation.x = -time/10;
+    cube.rotation.y = -time;
+   cube2.rotation.y = time/10;
+    cube2.rotation.z = time;
+   
+    
+
+
+    renderer.render(scene, camera);
+
+    requestAnimationFrame(render);
+  }
+  requestAnimationFrame(render);
+}
+
+main();
+</script>
+</body>
+</html>
