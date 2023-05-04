@@ -1,0 +1,26 @@
+about style:
+
+-only three colors:
+#ed2044 - red
+#6d6e71 - gray
+#000000 - black
+*buttons only red
+*background in all cases white
+*symbols in menus and navs only gray, when active red
+
+-no rounded corners and no border lines
+
+new changes:
+-burger menu
+	only b symbol when hidden
+-proportions 
+	scale up nav and menu elements*2
+-slideshow style:
+	without addition header
+	top nav without symbols
+	with new element - publish(red background)
+	in bottom: arrows and name of page
+	in right top transparent button "save x"
+-chatbot combined with report bug in Help & Support
+
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="logo3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.65580011"
+     inkscape:cx="809.69794"
+     inkscape:cy="395.69984"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true" />
+  <defs
+     id="defs2">
+    <rect
+       x="288.31074"
+       y="566.03685"
+       width="581.96444"
+       height="73.669551"
+       id="rect2008" />
+    <rect
+       x="258.27825"
+       y="492.80212"
+       width="613.48605"
+       height="98.25188"
+       id="rect1798" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:4.27374"
+       id="rect256"
+       width="54.934967"
+       height="54.934967"
+       x="170.9389"
+       y="78.033989"
+       ry="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10.3077;stroke-dasharray:10.3077, 10.3077;stroke-dashoffset:0"
+       id="path465"
+       sodipodi:type="arc"
+       sodipodi:cx="144.2635"
+       sodipodi:cy="90.519455"
+       sodipodi:rx="55.909924"
+       sodipodi:ry="55.909924"
+       sodipodi:start="2.5464354"
+       sodipodi:end="5.9428461"
+       sodipodi:arc-type="arc"
+       d="M 97.966713,121.86474 A 55.909924,55.909924 0 0 1 96.222475,61.919121 55.909924,55.909924 0 0 1 149.75173,34.879551 55.909924,55.909924 0 0 1 196.96652,71.856339"
+       sodipodi:open="true" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.4494637,0,0,0.4494637,-155.5642,-83.961311)"
+       id="text1796"
+       style="font-style:italic;font-weight:bold;font-size:64px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans Bold Italic';text-align:end;white-space:pre;shape-inside:url(#rect1798);display:inline;fill:#ff5555;stroke:#ffffff;stroke-width:7.94457;stroke-dasharray:7.94457, 7.94457;stroke-dashoffset:0;stroke-opacity:1"><tspan
+         x="505.81238"
+         y="550.88969"
+         id="tspan2556"><tspan
+           style="font-style:normal;-inkscape-font-specification:'Nimbus Sans Bold';fill:#000000;stroke:none"
+           id="tspan2554">GLOBAL 3D</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.53776694,0,0,0.53776694,-231.84286,-137.05719)"
+       id="text2006"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans Bold';text-align:end;white-space:pre;shape-inside:url(#rect2008);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.94457;stroke-dasharray:7.94457, 7.94457;stroke-dashoffset:0;stroke-opacity:1"><tspan
+         x="566.85217"
+         y="593.36511"
+         id="tspan2560"><tspan
+           style="font-weight:normal;-inkscape-font-specification:'Nimbus Sans'"
+           id="tspan2558">Designs Incorporated</tspan></tspan></text>
+  </g>
+</svg>
