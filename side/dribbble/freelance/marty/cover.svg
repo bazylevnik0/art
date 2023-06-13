@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="148mm"
+   height="210mm"
+   viewBox="0 0 148 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="cover.svg"
+   inkscape:export-filename="../7e5639dc/cover.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72369432"
+     inkscape:cx="276.35977"
+     inkscape:cy="434.57575"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1103">
+      <stop
+         style="stop-color:#00ffff;stop-opacity:1;"
+         offset="0"
+         id="stop1099" />
+      <stop
+         style="stop-color:#00ffff;stop-opacity:0;"
+         offset="1"
+         id="stop1101" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3460">
+      <stop
+         style="stop-color:#2ad4ff;stop-opacity:1;"
+         offset="0"
+         id="stop3456" />
+      <stop
+         style="stop-color:#2ad4ff;stop-opacity:0;"
+         offset="1"
+         id="stop3458" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3460"
+       id="radialGradient3462-3"
+       cx="78.890625"
+       cy="97.620155"
+       fx="78.890625"
+       fy="97.620155"
+       r="87.024506"
+       gradientTransform="matrix(1,0,0,1.3262469,-5.0959105e-6,-31.848277)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3460"
+       id="radialGradient3462-2"
+       cx="78.890625"
+       cy="97.620155"
+       fx="78.890625"
+       fy="97.620155"
+       r="87.024506"
+       gradientTransform="matrix(1,0,0,1.3262469,-4.5536917e-6,-31.848277)"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:label="Sharpen"
+       inkscape:menu="Image Effects"
+       inkscape:menu-tooltip="Sharpen edges and boundaries within the object, force=0.15"
+       style="color-interpolation-filters:sRGB;"
+       id="filter7383"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feConvolveMatrix
+         order="3 3"
+         kernelMatrix="0 -0.15 0 -0.15 1.6 -0.15 0 -0.15 0"
+         divisor="1"
+         in="SourceGraphic"
+         targetX="1"
+         targetY="1"
+         id="feConvolveMatrix7381" />
+    </filter>
+    <filter
+       inkscape:label="Swirl"
+       inkscape:menu="Distort"
+       inkscape:menu-tooltip="Paint objects with a transparent turbulence which wraps around color edges"
+       style="color-interpolation-filters:sRGB;"
+       id="filter7383-8"
+       x="-0.29208575"
+       y="-0.31682763"
+       width="1.5841715"
+       height="1.6336553">
+      <feConvolveMatrix
+         order="3 3"
+         kernelMatrix="0 -0.15 0 -0.15 1.6 -0.15 0 -0.15 0"
+         divisor="1"
+         in="SourceGraphic"
+         targetX="1"
+         targetY="1"
+         id="feConvolveMatrix7381-6"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix9008" />
+      <feGaussianBlur
+         id="feGaussianBlur9010"
+         stdDeviation="12.913342"
+         result="result10"
+         in="fbSourceGraphic" />
+      <feBlend
+         in2="result10"
+         id="feBlend9012"
+         mode="normal"
+         in="result10"
+         result="fbSourceGraphic" />
+      <feGaussianBlur
+         id="feGaussianBlur9014"
+         stdDeviation="3"
+         result="result8"
+         in="fbSourceGraphic" />
+      <feTurbulence
+         id="feTurbulence9016"
+         seed="0"
+         result="result7"
+         type="fractalNoise"
+         numOctaves="1"
+         baseFrequency="0.2" />
+      <feComposite
+         in2="result8"
+         id="feComposite9018"
+         result="result6"
+         operator="in"
+         in="result8" />
+      <feDisplacementMap
+         in2="result6"
+         id="feDisplacementMap9020"
+         in="result7"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="50"
+         result="result4" />
+      <feComposite
+         in2="result4"
+         id="feComposite9022"
+         result="result2"
+         operator="arithmetic"
+         in="result8"
+         k1="1"
+         k3="1" />
+      <feComposite
+         in2="result2"
+         id="feComposite9024"
+         result="fbSourceGraphic"
+         in="fbSourceGraphic"
+         operator="in" />
+      <feDisplacementMap
+         in2="result4"
+         id="feDisplacementMap9026"
+         yChannelSelector="G"
+         scale="50"
+         xChannelSelector="R" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3460"
+       id="radialGradient3462-36"
+       cx="78.890625"
+       cy="97.620155"
+       fx="78.890625"
+       fy="97.620155"
+       r="87.024506"
+       gradientTransform="matrix(1,0,0,1.3262469,-5.6376678e-8,-31.848277)"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:label="Sharpen"
+       inkscape:menu="Image Effects"
+       inkscape:menu-tooltip="Sharpen edges and boundaries within the object, force=0.15"
+       style="color-interpolation-filters:sRGB"
+       id="filter7383-3"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feConvolveMatrix
+         order="3 3"
+         kernelMatrix="0 -0.15 0 -0.15 1.6 -0.15 0 -0.15 0"
+         divisor="1"
+         in="SourceGraphic"
+         targetX="1"
+         targetY="1"
+         id="feConvolveMatrix7381-5" />
+    </filter>
+    <filter
+       inkscape:label="Swirl"
+       inkscape:menu="Distort"
+       inkscape:menu-tooltip="Paint objects with a transparent turbulence which wraps around color edges"
+       style="color-interpolation-filters:sRGB"
+       id="filter7383-8-8"
+       x="-0.29208575"
+       y="-0.31682763"
+       width="1.5841715"
+       height="1.6336553">
+      <feConvolveMatrix
+         order="3 3"
+         kernelMatrix="0 -0.15 0 -0.15 1.6 -0.15 0 -0.15 0"
+         divisor="1"
+         in="SourceGraphic"
+         targetX="1"
+         targetY="1"
+         id="feConvolveMatrix7381-6-5"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix9008-0" />
+      <feGaussianBlur
+         id="feGaussianBlur9010-9"
+         stdDeviation="12.913342"
+         result="result10"
+         in="fbSourceGraphic" />
+      <feBlend
+         in2="result10"
+         id="feBlend9012-9"
+         mode="normal"
+         in="result10"
+         result="fbSourceGraphic" />
+      <feGaussianBlur
+         id="feGaussianBlur9014-8"
+         stdDeviation="3"
+         result="result8"
+         in="fbSourceGraphic" />
+      <feTurbulence
+         id="feTurbulence9016-0"
+         seed="0"
+         result="result7"
+         type="fractalNoise"
+         numOctaves="1"
+         baseFrequency="0.2" />
+      <feComposite
+         in2="result8"
+         id="feComposite9018-2"
+         result="result6"
+         operator="in"
+         in="result8" />
+      <feDisplacementMap
+         in2="result6"
+         id="feDisplacementMap9020-4"
+         in="result7"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="50"
+         result="result4" />
+      <feComposite
+         in2="result4"
+         id="feComposite9022-9"
+         result="result2"
+         operator="arithmetic"
+         in="result8"
+         k1="1"
+         k3="1"
+         k2="0"
+         k4="0" />
+      <feComposite
+         in2="result2"
+         id="feComposite9024-0"
+         result="fbSourceGraphic"
+         in="fbSourceGraphic"
+         operator="in" />
+      <feDisplacementMap
+         in2="result4"
+         id="feDisplacementMap9026-1"
+         yChannelSelector="G"
+         scale="50"
+         xChannelSelector="R" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter9028-2"
+       x="-0.074983779"
+       y="-0.12403174"
+       width="1.1499676"
+       height="1.2480635">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="7.3677482"
+         id="feGaussianBlur9030-0" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter9032-0"
+       x="-0.035033029"
+       y="-0.03490919"
+       width="1.0700661"
+       height="1.0698184">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.6541211"
+         id="feGaussianBlur9034-6" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1103"
+       id="radialGradient1105"
+       cx="78.457694"
+       cy="77.288475"
+       fx="78.457694"
+       fy="77.288475"
+       r="87.024506"
+       gradientTransform="matrix(1,0,0,1.3262469,0,-25.215129)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#0055d4;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       id="rect1431"
+       width="174.04901"
+       height="230.83197"
+       x="-6.9218144"
+       y="-11.20431"
+       ry="0" />
+    <rect
+       style="font-variation-settings:'wght' 100;fill:url(#radialGradient1105);fill-opacity:1;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       id="rect1431-7"
+       width="174.04901"
+       height="230.83197"
+       x="-8.5668116"
+       y="-38.12751"
+       ry="0" />
+    <path
+       id="path1212"
+       style="font-variation-settings:'wght' 100;fill:#ffffff;stroke-width:0.301836;stroke-linecap:square;stroke-linejoin:round;opacity:0.55079561;filter:url(#filter7383)"
+       inkscape:transform-center-x="0.098321193"
+       inkscape:transform-center-y="6.2630841"
+       d="M 115.90644,25.741575 140.52292,70.682832 74.924972,145.92467 9.7667193,70.097075 35.094653,25.379556 Z"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.4866px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.11405;stroke-linecap:square;stroke-linejoin:round"
+       x="74.231468"
+       y="53.579391"
+       id="text1085"><tspan
+         sodipodi:role="line"
+         id="tspan1083"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.4866px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 900;fill:#ffffff;fill-opacity:1;stroke-width:1.11405"
+         x="74.231468"
+         y="53.579391">SLIM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.411px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.76635;stroke-linecap:square;stroke-linejoin:round"
+       x="76.595306"
+       y="76.918228"
+       id="text1089"><tspan
+         sodipodi:role="line"
+         id="tspan1087"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.411px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=800';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 800;fill:#ffffff;fill-opacity:1;stroke-width:0.76635"
+         x="76.595306"
+         y="76.918228">WITHOUT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.5255px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#0055d4;fill-opacity:1;stroke:none;stroke-width:0.926914;stroke-linecap:square;stroke-linejoin:round"
+       x="73.305809"
+       y="101.39121"
+       id="text1093"><tspan
+         sodipodi:role="line"
+         id="tspan1091"
+         style="fill:#0055d4;fill-opacity:1;stroke-width:0.926914"
+         x="73.305809"
+         y="101.39121">THE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6857px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.586614;stroke-linecap:square;stroke-linejoin:round"
+       x="73.673027"
+       y="118.94717"
+       id="text1097"><tspan
+         sodipodi:role="line"
+         id="tspan1095"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6857px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 900;fill:#ffffff;fill-opacity:1;stroke-width:0.586614"
+         x="73.673027"
+         y="118.94717">GYM</tspan></text>
+    <path
+       id="path1267"
+       style="font-variation-settings:'wght' 100;fill:#ffffff;stroke:none;stroke-width:2.38127;stroke-linecap:square"
+       d="M 101.04482,-4.3972288 98.442391,18.960515 124.78331,36.413106 94.379073,29.782009 85.253584,37.643506 83.557578,25.718689 60.48507,10.839958 87.620898,14.897195 Z"
+       sodipodi:nodetypes="ccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.9797px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.250513;stroke-linecap:square;stroke-linejoin:round"
+       x="73.769402"
+       y="155.76796"
+       id="text1323"><tspan
+         sodipodi:role="line"
+         id="tspan1321"
+         style="fill:#ffffff;stroke-width:0.250513"
+         x="73.769402"
+         y="155.76796">The Bodyweight Exercise Revolution</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       x="75.85688"
+       y="172.72731"
+       id="text1377"><tspan
+         sodipodi:role="line"
+         id="tspan1375"
+         style="fill:#ffffff;stroke-width:0.443"
+         x="75.85688"
+         y="172.72731">Marty Suidgeest</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#0055d4;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       id="rect1431-0"
+       width="174.04901"
+       height="230.83197"
+       x="219.48004"
+       y="-11.00444"
+       ry="0" />
+    <rect
+       style="font-variation-settings:'wght' 100;fill:url(#radialGradient3462-2);fill-opacity:1;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       id="rect1431-1-9"
+       width="174.04901"
+       height="230.83197"
+       x="208.73996"
+       y="-19.100704"
+       ry="0" />
+    <path
+       id="path1212-91"
+       style="font-variation-settings:'wght' 100;opacity:0.550796;fill:#ffffff;stroke-width:0.301836;stroke-linecap:square;stroke-linejoin:round"
+       inkscape:transform-center-x="0.098321193"
+       inkscape:transform-center-y="6.2630841"
+       d="M 342.3083,25.941447 366.92479,70.882704 301.32684,146.12454 236.16858,70.296947 261.49652,25.579428 Z"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2469px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.13792;stroke-linecap:square;stroke-linejoin:round"
+       x="301.01779"
+       y="53.810581"
+       id="text1085-3"><tspan
+         sodipodi:role="line"
+         id="tspan1083-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2469px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 900;fill:#ffffff;fill-opacity:1;stroke-width:1.13792"
+         x="301.01779"
+         y="53.810581">SLIM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.411px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.76635;stroke-linecap:square;stroke-linejoin:round"
+       x="302.99716"
+       y="77.118103"
+       id="text1089-5"><tspan
+         sodipodi:role="line"
+         id="tspan1087-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.411px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=800';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 800;fill:#ffffff;fill-opacity:1;stroke-width:0.76635"
+         x="302.99716"
+         y="77.118103">WITHOUT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.5255px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#0055d4;fill-opacity:1;stroke:none;stroke-width:0.926914;stroke-linecap:square;stroke-linejoin:round"
+       x="300.76599"
+       y="101.59109"
+       id="text1093-5"><tspan
+         sodipodi:role="line"
+         id="tspan1091-7"
+         style="fill:#0055d4;fill-opacity:1;stroke-width:0.926914"
+         x="300.76599"
+         y="101.59109">THE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6857px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.586614;stroke-linecap:square;stroke-linejoin:round"
+       x="300.60406"
+       y="119.14704"
+       id="text1097-3"><tspan
+         sodipodi:role="line"
+         id="tspan1095-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6857px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 900;fill:#ffffff;fill-opacity:1;stroke-width:0.586614"
+         x="300.60406"
+         y="119.14704">GYM</tspan></text>
+    <path
+       id="path1267-8"
+       style="font-variation-settings:'wght' 100;fill:#ffffff;stroke:none;stroke-width:2.38127;stroke-linecap:square"
+       d="m 327.44668,-4.1973574 -2.60243,23.3577444 26.34093,17.452591 -30.40424,-6.631097 -9.12549,7.861497 -1.69601,-11.924817 -23.07251,-14.878731 27.13583,4.057237 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.9797px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.250513;stroke-linecap:square;stroke-linejoin:round"
+       x="301.75876"
+       y="155.96783"
+       id="text1323-9"><tspan
+         sodipodi:role="line"
+         id="tspan1321-5"
+         style="fill:#ffffff;stroke-width:0.250513"
+         x="301.75876"
+         y="155.96783">The Bodyweight Exercise Revolution</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       x="301.72958"
+       y="172.92719"
+       id="text1377-5"><tspan
+         sodipodi:role="line"
+         id="tspan1375-3"
+         style="fill:#ffffff;stroke-width:0.443"
+         x="301.72958"
+         y="172.92719">Marty Suidgeest</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#0055d4;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       id="rect1431-4"
+       width="174.04901"
+       height="230.83197"
+       x="-231.42271"
+       y="-10.749908"
+       ry="0" />
+    <rect
+       style="font-variation-settings:'wght' 100;fill:url(#radialGradient3462-3);fill-opacity:1;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       id="rect1431-1-1"
+       width="174.04901"
+       height="230.83197"
+       x="-242.16281"
+       y="-18.846176"
+       ry="0" />
+    <path
+       id="path1212-9"
+       style="font-variation-settings:'wght' 100;opacity:0.840504;fill:#ffffff;stroke-width:0.301836;stroke-linecap:square;stroke-linejoin:round"
+       inkscape:transform-center-x="0.098321193"
+       inkscape:transform-center-y="6.2630841"
+       d="m -108.59447,26.195976 24.616485,44.941257 -65.597955,75.241837 -65.15824,-75.827597 25.32793,-44.717516 z"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2469px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#0055d4;fill-opacity:1;stroke:none;stroke-width:1.13792;stroke-linecap:square;stroke-linejoin:round"
+       x="-149.88498"
+       y="54.065109"
+       id="text1085-5"><tspan
+         sodipodi:role="line"
+         id="tspan1083-7"
+         style="fill:#0055d4;fill-opacity:1;stroke-width:1.13792"
+         x="-149.88498"
+         y="54.065109">SLIM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.411px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#0055d4;fill-opacity:1;stroke:none;stroke-width:0.76635;stroke-linecap:square;stroke-linejoin:round"
+       x="-147.90559"
+       y="77.372627"
+       id="text1089-4"><tspan
+         sodipodi:role="line"
+         id="tspan1087-1"
+         style="fill:#0055d4;fill-opacity:1;stroke-width:0.76635"
+         x="-147.90559"
+         y="77.372627">WITHOUT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.5255px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#0055d4;fill-opacity:1;stroke:none;stroke-width:0.926914;stroke-linecap:square;stroke-linejoin:round"
+       x="-148.53371"
+       y="104.6233"
+       id="text1093-2"><tspan
+         sodipodi:role="line"
+         id="tspan1091-2"
+         style="fill:#0055d4;fill-opacity:1;stroke-width:0.926914"
+         x="-148.53371"
+         y="104.6233">THE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.9909px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#0055d4;fill-opacity:1;stroke:none;stroke-width:0.564803;stroke-linecap:square;stroke-linejoin:round"
+       x="-149.94241"
+       y="125.49903"
+       id="text1097-1"><tspan
+         sodipodi:role="line"
+         id="tspan1095-6"
+         style="fill:#0055d4;fill-opacity:1;stroke-width:0.564803"
+         x="-149.94241"
+         y="125.49903">GYM</tspan></text>
+    <path
+       id="path1267-2"
+       style="font-variation-settings:'wght' 100;fill:#ffffff;stroke:#1caaf0;stroke-width:2;stroke-linecap:square"
+       d="m -138.20701,-4.0187584 -0.91683,19.7179824 23.02217,13.201896 -25.84203,-3.911993 -7.22291,7.083023 -2.06699,-9.902886 -20.14345,-11.221557 22.96331,1.931655 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       x="-143.54878"
+       y="161.72813"
+       id="text1323-0"><tspan
+         sodipodi:role="line"
+         id="tspan1321-2"
+         style="fill:#ffffff;stroke-width:0.443"
+         x="-143.54878"
+         y="161.72813">The Bodyweight Exercise Revolution</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       x="-159.01602"
+       y="192.4595"
+       id="text1377-2"><tspan
+         sodipodi:role="line"
+         id="tspan1375-9"
+         style="fill:#ffffff;stroke-width:0.443"
+         x="-159.01602"
+         y="192.4595">Marty Suidgeest</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#0055d4;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       id="rect1431-3"
+       width="174.04901"
+       height="230.83197"
+       x="467.79849"
+       y="-7.3449044"
+       ry="0" />
+    <rect
+       style="font-variation-settings:'wght' 100;fill:url(#radialGradient3462-36);fill-opacity:1;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       id="rect1431-1-90"
+       width="174.04901"
+       height="230.83197"
+       x="457.05838"
+       y="-15.44117"
+       ry="0" />
+    <path
+       id="path1212-8"
+       style="font-variation-settings:'wght' 100;opacity:0.550796;fill:#ffffff;stroke-width:0.301836;stroke-linecap:square;stroke-linejoin:round;filter:url(#filter7383-3)"
+       inkscape:transform-center-x="0.098321193"
+       inkscape:transform-center-y="6.2630841"
+       d="M 590.62674,29.600981 615.24322,74.542238 549.64527,149.78408 484.48702,73.956481 509.81495,29.238962 Z"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       id="path1212-0-3"
+       style="font-variation-settings:'wght' 100;opacity:0.421344;fill:#00ffff;stroke-width:0.301836;stroke-linecap:square;stroke-linejoin:round;filter:url(#filter7383-8-8)"
+       inkscape:transform-center-x="0.11404225"
+       inkscape:transform-center-y="7.2643314"
+       d="M 112.46761,26.809497 137.08409,71.750754 71.486138,146.99259 6.3278943,71.164997 31.655828,26.447478 Z"
+       sodipodi:nodetypes="cccccc"
+       transform="matrix(1.1598654,0,0,1.1598654,460.83862,-11.226185)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2469px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.13792;stroke-linecap:square;stroke-linejoin:round"
+       x="549.33624"
+       y="57.470116"
+       id="text1085-8"><tspan
+         sodipodi:role="line"
+         id="tspan1083-73"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.2469px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 900;fill:#ffffff;fill-opacity:1;stroke-width:1.13792"
+         x="549.33624"
+         y="57.470116">SLIM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.411px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.76635;stroke-linecap:square;stroke-linejoin:round"
+       x="551.31561"
+       y="80.777634"
+       id="text1089-1"><tspan
+         sodipodi:role="line"
+         id="tspan1087-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.411px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=800';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 800;fill:#ffffff;fill-opacity:1;stroke-width:0.76635"
+         x="551.31561"
+         y="80.777634">WITHOUT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.5255px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#0055d4;fill-opacity:1;stroke:none;stroke-width:0.926914;stroke-linecap:square;stroke-linejoin:round"
+       x="549.08447"
+       y="105.25062"
+       id="text1093-0"><tspan
+         sodipodi:role="line"
+         id="tspan1091-5"
+         style="fill:#0055d4;fill-opacity:1;stroke-width:0.926914"
+         x="549.08447"
+         y="105.25062">THE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6857px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.586614;stroke-linecap:square;stroke-linejoin:round"
+       x="548.92249"
+       y="122.80658"
+       id="text1097-0"><tspan
+         sodipodi:role="line"
+         id="tspan1095-31"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6857px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 900;fill:#ffffff;fill-opacity:1;stroke-width:0.586614"
+         x="548.92249"
+         y="122.80658">GYM</tspan></text>
+    <path
+       id="path1267-80"
+       style="font-variation-settings:'wght' 100;fill:#ffffff;stroke:none;stroke-width:2.38127;stroke-linecap:square"
+       d="m 575.76512,-0.53782349 -2.60243,23.35774449 26.34092,17.452591 -30.40424,-6.631097 -9.12549,7.861497 -1.696,-11.924817 -23.07251,-14.878731 27.13583,4.057237 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.9797px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.250513;stroke-linecap:square;stroke-linejoin:round"
+       x="550.07721"
+       y="159.62737"
+       id="text1323-1"><tspan
+         sodipodi:role="line"
+         id="tspan1321-7"
+         style="fill:#ffffff;stroke-width:0.250513"
+         x="550.07721"
+         y="159.62737">The Bodyweight Exercise Revolution</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Inter;-inkscape-font-specification:'Inter, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round"
+       x="550.04803"
+       y="176.58672"
+       id="text1377-9"><tspan
+         sodipodi:role="line"
+         id="tspan1375-1"
+         style="fill:#ffffff;stroke-width:0.443"
+         x="550.04803"
+         y="176.58672">Marty Suidgeest</tspan></text>
+    <path
+       style="font-variation-settings:'wght' 900;opacity:0.215562;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.59324;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter9028-2)"
+       d="M -10.257478,107.80872 95.475886,239.90112 225.56147,97.336037"
+       id="path6286-0"
+       transform="matrix(1,0,0,1.1898475,474.7203,-45.042215)" />
+    <path
+       style="font-variation-settings:'wght' 900;opacity:0.40411;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter9032-0)"
+       d="M -16.708791,145.23163 -11.839544,-22.939215 155.33216,-25.090853 -26.493134,157.37946"
+       id="path6577-3"
+       transform="matrix(1.0320792,0,0,0.95763633,475.77452,10.796429)" />
+    <path
+       style="fill:#ffffff;stroke:none;stroke-width:0.443;stroke-linecap:square;stroke-linejoin:round;opacity:0.24037135"
+       d="M -30.516496,120.02734 180.4418,-19.505942 -32.744484,-39.519968 Z"
+       id="path1190" />
+  </g>
+</svg>
